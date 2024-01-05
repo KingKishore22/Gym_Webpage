@@ -975,10 +975,14 @@ Love the proteinshakes .
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init({
-  offset: 200,
-  duration: 800,
-  easing: 'ease-in-quad',
-  delay: 100,
+  disable: 'mobile'
+}); 
+
+AOS.init({
+  disable: function () {
+    var maxWidth = 800;
+    return window.innerWidth < maxWidth;
+  }
 });
 </script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
