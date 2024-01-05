@@ -10,18 +10,6 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
 }
-
-.head {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 99;
-  width: 100%;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  background-color: #000000;
-}
-
 .area {
   padding-top: 5%;
   background: black;
